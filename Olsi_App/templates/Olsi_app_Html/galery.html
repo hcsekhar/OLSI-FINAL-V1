@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}OLSI | Gallery{% endblock  %}
+{% block content %}
+    
+<!-- Page Header Start -->
+{% comment %} <div class="container-fluid page-header breadcrumb-bg py-5 mb-5">
+  <div class="container text-center py-5">
+    <h1 class="display-3 text-primary mb-4 slideInDown">
+      <span class="text-white">Gallery</span>
+      
+    </h1>
+    <nav aria-label="breadcrumb animated slideInDown">
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item">
+          <a href="{% url 'home' %}" style="text-decoration: none;"><span class="text-white-50" style="font-size: 30px;">Home&nbsp; &#47;</span></a>
+        </li>
+
+        <li class="breadcrumb-item">
+          <a href="{% url 'business' %}"><span class="text-white-50" style="font-size: 30px;">Gallery</span></a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div> {% endcomment %}
+<!-- Page Header End -->
+
+<!-- Gallery -->
+<div class="row" style="margin: 50px;">
+    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+      <img
+        src="{% static 'img/gallery.png' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Wintry Mountain Landscape"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      />
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="{% static 'img/gallery1.png' %}"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Waves at Sea"
+      />
+  
+      <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Yosemite National Park"
+      />
+    </div>
+  </div>
+  <!-- Gallery -->
+
+  {% endblock %}
